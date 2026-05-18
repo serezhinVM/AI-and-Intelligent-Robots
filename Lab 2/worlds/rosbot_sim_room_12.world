@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <world name="room_12">
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <scene>
+      <shadows>false</shadows>
+    </scene>
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose frame=''>1.25 1.25 3.5 0 1.2 0.8</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+    <!-- Bottom wall -->
+    <model name="wall_bottom">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>2.5 0.05 0.3</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>2.5 0.05 0.3</size></box></geometry>
+          <material><ambient>0.5 0.5 0.5 1</ambient></material>
+        </visual>
+      </link>
+      <pose>1.25 0 0.15 0 0 0</pose>
+    </model>
+    <!-- Top wall -->
+    <model name="wall_top">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>2.5 0.05 0.3</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>2.5 0.05 0.3</size></box></geometry>
+          <material><ambient>0.5 0.5 0.5 1</ambient></material>
+        </visual>
+      </link>
+      <pose>1.25 2.5 0.15 0 0 0</pose>
+    </model>
+    <!-- Left wall -->
+    <model name="wall_left">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>0.05 2.5 0.3</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>0.05 2.5 0.3</size></box></geometry>
+          <material><ambient>0.5 0.5 0.5 1</ambient></material>
+        </visual>
+      </link>
+      <pose>0 1.25 0.15 0 0 0</pose>
+    </model>
+    <!-- Right wall -->
+    <model name="wall_right">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>0.05 2.5 0.3</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>0.05 2.5 0.3</size></box></geometry>
+          <material><ambient>0.5 0.5 0.5 1</ambient></material>
+        </visual>
+      </link>
+      <pose>2.5 1.25 0.15 0 0 0</pose>
+    </model>
+    <!-- Pillar T1 -->
+    <model name="pillar_T1">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><cylinder><radius>0.125</radius><length>0.3</length></cylinder></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><cylinder><radius>0.125</radius><length>0.3</length></cylinder></geometry>
+          <material><ambient>0.8 0.2 0.2 1</ambient></material>
+        </visual>
+      </link>
+      <pose>0.8 2.25 0.15 0 0 0</pose>
+    </model>
+    <!-- Pillar T2 -->
+    <model name="pillar_T2">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><cylinder><radius>0.125</radius><length>0.3</length></cylinder></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><cylinder><radius>0.125</radius><length>0.3</length></cylinder></geometry>
+          <material><ambient>0.8 0.2 0.2 1</ambient></material>
+        </visual>
+      </link>
+      <pose>0.8 1.5 0.15 0 0 0</pose>
+    </model>
+    <!-- Pillar T3 -->
+    <model name="pillar_T3">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><cylinder><radius>0.125</radius><length>0.3</length></cylinder></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><cylinder><radius>0.125</radius><length>0.3</length></cylinder></geometry>
+          <material><ambient>0.8 0.2 0.2 1</ambient></material>
+        </visual>
+      </link>
+      <pose>1.7 1.0 0.15 0 0 0</pose>
+    </model>
+    <!-- Pillar T4 -->
+    <model name="pillar_T4">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><cylinder><radius>0.125</radius><length>0.3</length></cylinder></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><cylinder><radius>0.125</radius><length>0.3</length></cylinder></geometry>
+          <material><ambient>0.8 0.2 0.2 1</ambient></material>
+        </visual>
+      </link>
+      <pose>2.2 1.3 0.15 0 0 0</pose>
+    </model>
+    <!-- Charger -->
+    <model name="charger">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><cylinder><radius>0.125</radius><length>0.3</length></cylinder></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><cylinder><radius>0.125</radius><length>0.3</length></cylinder></geometry>
+          <material><ambient>0.2 0.8 0.2 1</ambient></material>
+        </visual>
+      </link>
+      <pose>2.25 0.25 0.15 0 0 0</pose>
+    </model>
+  </world>
+</sdf>
