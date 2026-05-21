@@ -13,8 +13,8 @@ def generate_launch_description():
     world_file_path = 'worlds/rosbot_sim_room_12.world'
     launch_file_path = 'launch'
     # Pose
-    x_pose = '0.3'
-    y_pose = '0.3'
+    x_pose = '0.0'
+    y_pose = '0.0'
     z_pose = '0.0'
     yaw_pose = '1.57'
     pkg_gazebo_ros = FindPackageShare(package='gazebo_ros').find('gazebo_ros')
