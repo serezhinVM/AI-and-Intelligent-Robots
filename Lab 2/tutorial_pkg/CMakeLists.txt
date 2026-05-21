@@ -13,9 +13,10 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
 
 add_executable(tutorial_pkg_node src/tutorial_pkg_node.cpp)
-ament_target_dependencies(tutorial_pkg_node rclcpp std_msgs geometry_msgs)
+ament_target_dependencies(tutorial_pkg_node rclcpp std_msgs geometry_msgs nav_msgs)
 
 target_include_directories(tutorial_pkg_node PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
