@@ -19,7 +19,7 @@ outline and all four pillars clearly.
 
 ## Structure
 
-`
+```
 Lab 6/
 +-- README.md
 +-- plot_trajectory.py
@@ -44,17 +44,17 @@ L-- tutorial_pkg/
     |   L-- rosbot_sim_room_12.world
     +-- src/
         L-- tutorial_pkg_node.cpp
-`
+```
 
 ## Build & run
 
-`ash
+```bash
 cd ~/M-Drive/ros2_ws
 colcon build --packages-select tutorial_pkg
 source install/setup.bash
 export TURTLEBOT3_MODEL=burger
 ros2 launch tutorial_pkg tutorial_turtlebot.launch.py
-`
+```
 
 ## Outputs
 
@@ -71,12 +71,12 @@ ros2 launch tutorial_pkg tutorial_turtlebot.launch.py
 
 ### Regenerate graphs
 
-`ash
+```bash
 python3 plot_trajectory.py
 python3 plot_velocity.py
 python3 plot_heading.py
 python3 plot_laser_map.py
-`
+```
 
 ## Changes from Lab 5
 
