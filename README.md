@@ -155,9 +155,3 @@ ros2 launch tutorial_pkg tutorial_turtlebot.launch.py
 ```
 
 Requires ROS 2 Humble, Gazebo, and TurtleBot3 packages installed.
-
----
-
-## Licence
-
-Educational project — no licence specified.
